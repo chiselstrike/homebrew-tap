@@ -5,12 +5,12 @@
 class Turso < Formula
   desc ""
   homepage "https://github.com/chiselstrike/homebrew-tap"
-  version "0.87.1"
+  version "0.87.2"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/chiselstrike/homebrew-tap/releases/download/v0.87.1/homebrew-tap_Darwin_arm64.tar.gz"
-      sha256 "7f023d5d3579cd34822d6e4a8b99169670435e0904fba86727b42a31a8a36419"
+      url "https://github.com/chiselstrike/homebrew-tap/releases/download/v0.87.2/homebrew-tap_Darwin_arm64.tar.gz"
+      sha256 "25a292b0a019509af30b4e199f7130190d9812ada9941bfea69c3757da807963"
 
       def install
         bin.install "turso"
@@ -20,8 +20,8 @@ class Turso < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/chiselstrike/homebrew-tap/releases/download/v0.87.1/homebrew-tap_Darwin_x86_64.tar.gz"
-      sha256 "565ba1df7de7a33cb4d9dd3170bd2887c52b46a449b37eb605740033b53d5d1d"
+      url "https://github.com/chiselstrike/homebrew-tap/releases/download/v0.87.2/homebrew-tap_Darwin_x86_64.tar.gz"
+      sha256 "b80762b6cb132da8d3a183e6997f0fd0c3cbbdce7f8edfde95194ffd217ff361"
 
       def install
         bin.install "turso"
@@ -34,8 +34,8 @@ class Turso < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chiselstrike/homebrew-tap/releases/download/v0.87.1/homebrew-tap_Linux_arm64.tar.gz"
-      sha256 "d3a89d418221ce0ba2f909756064bb1c344b07f894d221cc82e520e95fb6f1db"
+      url "https://github.com/chiselstrike/homebrew-tap/releases/download/v0.87.2/homebrew-tap_Linux_arm64.tar.gz"
+      sha256 "d7621015e51ed1e4605bea875aed0d09ebbafc3759e1255ad98fd97a055df30c"
 
       def install
         bin.install "turso"
@@ -45,8 +45,8 @@ class Turso < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/chiselstrike/homebrew-tap/releases/download/v0.87.1/homebrew-tap_Linux_x86_64.tar.gz"
-      sha256 "1e608b63d5c414756de7535c576577f02f61590f02ce8aa811bc452a953fe5da"
+      url "https://github.com/chiselstrike/homebrew-tap/releases/download/v0.87.2/homebrew-tap_Linux_x86_64.tar.gz"
+      sha256 "19125929be826598b7f858e4f494475b41aedb54d9ed95eb3325b305c0ce6141"
 
       def install
         bin.install "turso"
